@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site-on</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        header {
+            background-color: rgb(252, 101, 4);
+            font-size: 1.5rem;
+            width: 100%;
+        }
+
+        .fa-magnifying-glass {
+            display: none;
+        }
+
+        header h1 {
+            font-weight: 800;
+        }
+
+        .campo-busca {
+            max-width: 30rem;
+            width: 100%;
+        }
+
+        .nav-link.active {
+            background-color: rgba(255, 255, 255, 0.473) !important;
+            color: black !important;
+        }
+
+        .nav-link {
+            text-align: center;
+        }
+
+        nav a {
+            color: white !important;
+        }
+
+        nav ul li {
+            padding: 0.2rem;
+        }
+
+        .icone-diferente {
+            color: black !important;
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+
+        .carousel-item img {
+            width: 100%;
+        }
+
+        @media (min-width: 992px) {
+            nav {
+                justify-content: center;
+            }
+
+            h1 {
+                margin-right: 1rem;
+            }
+
+            .pai-campo-busca {
+                margin-left: 1rem;
+                justify-content: center;
+
+            }
+
+            .pane {
+                font-size: 3.5rem;
+            }
+        }
+
+        @media (max-width: 668px) {
+            .pai-campo-busca input {
+                display: none;
+
+            }
+
+            .pai-campo-busca ul li {
+                padding: 0 1rem;
+            }
+
+            .pai-campo-busca ul li a {
+                justify-content: center;
+            }
+
+
+            .fa-magnifying-glass {
+                display: block;
+            }
+
+            header {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            .agrupa {
+                display: flex;
+            }
+
+            .caixa-apresentação {
+                display: none;
+            } 
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <div class="agrupa">
+                    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#barra-navegação" >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <button class="btn" data-bs-toggle="modal" data-bs-target="#caixa-busca">
+                        <i class="fa-solid fa-magnifying-glass fa-lg" style="color: #efefefd8;"></i>
+                    </button>
+                </div>
+                <div class="estilo col-lg-2">
+                    <h1>Site-on</h1>
+                </div>
+                <div class=" col-lg-3  pai-campo-busca" style="margin-right: 0;">
+                    <input type="search" class="form-control campo-busca" placeholder="Busque na Site-on">
+                </div>
+                <div class="estilo-nav col-12 col-lg-7">
+                    <nav class="collapse navbar-collapse" id="barra-navegação">
+                        <ul class="nav nav-pills navbar-nav">
+                            <li class="nav-item"><a href="#inicio" class="nav-link active">Início</a></li>
+                            <li class="nav-item"><a href="#Sobre" class="nav-link">Sobre</a></li>
+                            <li class="nav-item"><a href="#Produtos" class="nav-link">Produtos</a></li>
+                            <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link icone-diferente"><i
+                                        class="fa-solid fa-headset fa-lg"></i></a></li>
+                            <li class="nav-item"><a href="#" class="nav-link icone-diferente"><i
+                                        class="fa-solid fa-cart-shopping fa-lg"></i></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container mt-5" id="inicio">
+            <div class="carousel slide caixa-apresentação" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/imagem-um-slide.png" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/imagem-dois-slide.png" style="background-position: hover;" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/imagem-tres-slide.webp" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/imagem-quatro-slide.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5" id="Sobre">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="img/cartao-1.png" style="width: 100%;" alt="">
+                        </div>
+                        <div class="card-body">
+                            <p><strong>Por que ter uma placa de vídeo?</strong></p>
+                            <p>Placas de vídeo dedicadas oferecem gráficos melhores, maior fluidez e taxas de quadros
+                                mais altas.</p>
+                        </div>
+                        <div class="card-footer">
+                            ler mais...
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="img/cartao-2.png" style="width: 100%;" alt="">
+                        </div>
+                        <div class="card-body">
+                            <strong>
+                                <p>Por que ter um SSD?</p>
+                            </strong>
+                            <p>Ter um SSD (Solid State Drive) em vez de um HD tradicional (disco rígido) traz grandes
+                                vantagens de desempenho e confiabilidade</p>
+                        </div>
+                        <div class="card-footer">
+                            ler mais...
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="img/cartao-3.jpg" alt="" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <strong>
+                                <p>Por que ter uma memória RAM de qualidade?</p>
+                            </strong>
+                            <p>Programas abrem e funcionam mais rápido, quanto mais RAM, menos o sistema precisa
+                                recorrer ao disco/ssd</p>
+                        </div>
+                        <div class="card-footer">
+                            ler mais...
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <section class="mt-5" id="Produtos">
+        <div class="container">
+            <h2>
+                <strong>Em alta</strong>
+            </h2>
+            <div class="row">
+                <div class="col-sm-12 mt-2 col-md-6 col-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="img/imagem-seção-dois.jpg" style="width: 100%;" alt="">
+                        </div>
+                        <div class="card-body position-relative">
+                            <span>
+                                <strong>
+                                    <p class="btn btn-danger position-absolute m-2 top-0 end-0"
+                                        style="font-size: 0.9rem;">Promoção</p>
+                                </strong>
+                            </span>
+                            <h5 class="card-title pb-3">PC gamer Ryzen 5</h5>
+                            <p class="text-muted mt-1">Computador Gamer Pichau, AMD Ryzen 5 5500, GeForce RTX 4060 8GB,
+                                16GB
+                                DDR4, SSD 480GB</p>
+                            <h6 class="text-success">R$2.999,00</h6>
+                            <button class="btn btn-success">
+                                Comprar<i class="fa-solid fa-cart-shopping fa-lg"></i>
+                            </button>
+                        </div>
+                        <div class="card-footer">
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-sm-12 mt-2 col-md-6 col-lg-4 ">
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="img/imagem-seção-dois.jpg" style="width: 100%;" alt="">
+                        </div>
+                        <div class="card-body position-relative">
+                            <span>
+                                <strong>
+                                    <p class="btn btn-danger position-absolute m-2 top-0 end-0">Promoção</p>
+                                </strong>
+                            </span>
+                            <h5 class="card-title">PC gamer Ryzen 5</h5>
+                            <p class="text-muted">Computador Gamer Pichau, AMD Ryzen 5 5500, GeForce RTX 4060 8GB, 16GB
+                                DDR4, SSD 480GB</p>
+                            <h6 class="text-success">R$2.999,00</h6>
+                            <button class="btn btn-success">
+                                Comprar<i class="fa-solid fa-cart-shopping fa-lg"></i>
+                            </button>
+                        </div>
+                        <div class="card-footer">
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-sm-12 mt-2 col-md-6 col-lg-4 ">
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="img/imagem-seção-dois.jpg" style="width: 100%;" alt="">
+                        </div>
+                        <div class="card-body position-relative">
+                            <span>
+                                <strong>
+                                    <p class="btn btn-danger position-absolute m-2 top-0 end-0">Promoção</p>
+                                </strong>
+                            </span>
+                            <h5 class="card-title">PC gamer Ryzen 5</h5>
+                            <p class="text-muted">Computador Gamer Pichau, AMD Ryzen 5 5500, GeForce RTX 4060 8GB, 16GB
+                                DDR4, SSD 480GB</p>
+                            <h6 class="text-success">R$2.999,00</h6>
+                            <button class="btn btn-success">
+                                Comprar<i class="fa-solid fa-cart-shopping fa-lg"></i>
+                            </button>
+                        </div>
+                        <div class="card-footer">
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-sm-12 mt-2 col-md-6 col-lg-4 ">
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="img/imagem-seção-dois.jpg" style="width: 100%;" alt="">
+                        </div>
+                        <div class="card-body position-relative">
+                            <span>
+                                <strong>
+                                    <p class="btn btn-danger position-absolute m-2 top-0 end-0">Promoção</p>
+                                </strong>
+                            </span>
+                            <h5 class="card-title">PC gamer Ryzen 5</h5>
+                            <p class="text-muted">Computador Gamer Pichau, AMD Ryzen 5 5500, GeForce RTX 4060 8GB, 16GB
+                                DDR4, SSD 480GB</p>
+                            <h6 class="text-success">R$2.999,00</h6>
+                            <button class="btn btn-success">
+                                Comprar<i class="fa-solid fa-cart-shopping fa-lg"></i>
+                            </button>
+                        </div>
+                        <div class="card-footer">
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-sm-12 mt-2 col-md-6 col-lg-4 ">
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="img/imagem-seção-dois.jpg" style="width: 100%;" alt="">
+                        </div>
+                        <div class="card-body position-relative">
+                            <span>
+                                <strong>
+                                    <p class="btn btn-danger position-absolute m-2 top-0 end-0">Promoção</p>
+                                </strong>
+                            </span>
+                            <h5 class="card-title">PC gamer Ryzen 5</h5>
+                            <p class="text-muted">Computador Gamer Pichau, AMD Ryzen 5 5500, GeForce RTX 4060 8GB, 16GB
+                                DDR4, SSD 480GB</p>
+                            <h6 class="text-success">R$2.999,00</h6>
+                            <button class="btn btn-success">
+                                Comprar<i class="fa-solid fa-cart-shopping fa-lg"></i>
+                            </button>
+                        </div>
+                        <div class="card-footer">
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-sm-12 mt-2 col-md-6 col-lg-4 ">
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="img/imagem-seção-dois.jpg" style="width: 100%;" alt="">
+                        </div>
+                        <div class="card-body position-relative">
+                            <span>
+                                <strong>
+                                    <p class="btn btn-danger position-absolute m-2 top-0 end-0">Promoção</p>
+                                </strong>
+                            </span>
+                            <h5 class="card-title">PC gamer Ryzen 5</h5>
+                            <p class="text-muted">Computador Gamer Pichau, AMD Ryzen 5 5500, GeForce RTX 4060 8GB, 16GB
+                                DDR4, SSD 480GB</p>
+                            <h6 class="text-success">R$2.999,00</h6>
+                            <button class="btn btn-success">
+                                Comprar<i class="fa-solid fa-cart-shopping fa-lg"></i>
+                            </button>
+                        </div>
+                        <div class="card-footer">
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-sm-12 mt-2 col-md-6 col-lg-4 ">
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="img/imagem-seção-dois.jpg" style="width: 100%;" alt="">
+                        </div>
+                        <div class="card-body position-relative">
+                            <span>
+                                <strong>
+                                    <p class="btn btn-danger position-absolute m-2 top-0 end-0">Promoção</p>
+                                </strong>
+                            </span>
+                            <h5 class="card-title">PC gamer Ryzen 5</h5>
+                            <p class="text-muted">Computador Gamer Pichau, AMD Ryzen 5 5500, GeForce RTX 4060 8GB, 16GB
+                                DDR4, SSD 480GB</p>
+                            <h6 class="text-success">R$2.999,00</h6>
+                            <button class="btn btn-success">
+                                Comprar<i class="fa-solid fa-cart-shopping fa-lg"></i>
+                            </button>
+                        </div>
+                        <div class="card-footer">
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-sm-12 mt-2 col-md-6 col-lg-4 ">
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="img/imagem-seção-dois.jpg" style="width: 100%;" alt="">
+                        </div>
+                        <div class="card-body position-relative">
+                            <span>
+                                <strong>
+                                    <p class="btn btn-danger position-absolute m-2 top-0 end-0">Promoção</p>
+                                </strong>
+                            </span>
+                            <h5 class="card-title">PC gamer Ryzen 5</h5>
+                            <p class="text-muted">Computador Gamer Pichau, AMD Ryzen 5 5500, GeForce RTX 4060 8GB, 16GB
+                                DDR4, SSD 480GB</p>
+                            <h6 class="text-success">R$2.999,00</h6>
+                            <button class="btn btn-success">
+                                Comprar<i class="fa-solid fa-cart-shopping fa-lg"></i>
+                            </button>
+                        </div>
+                        <div class="card-footer">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class=" w-100% mt-5" style="background-color: black; height: 30vh;" id="contato">
+        <div class="container" style="height: 100%; color: #f7f7f7;">
+            <div class="row d-flex" style="height: 85%;">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4  d-flex" style="align-items: center;">
+                    <ul style="list-style: none;">
+                        <li>
+                            <h3>
+                                <p style="color: orange;">Institucional</p>
+                            </h3>
+                        </li>
+                        <li>
+                            <a href="#" style="text-decoration: none; color: white;">
+                                <p>Quem somos</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" style="text-decoration: none; color: white;">
+                                <p>Onde estamos</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-3 col-md-3 col-lg-4 d-flex" style="align-items: center; justify-content: center;">
+                    <div class="d-flex" style="justify-content: center;"> 
+                        <div class="row">
+                            <div class="col">
+                                <i class="fa-brands fa-facebook fa-lg pane"
+                                    style=" color: #fafcff; font-size: auto"></i>
+                            </div>
+                            <div class="col">
+                                <i class="fa-brands fa-instagram fa-lg pane"
+                                    style=" color: #fafcff;  font-size: auto"></i>
+                            </div>
+                            <div class="col">
+                                <i class="fa-brands fa-x-twitter fa-lg pane"
+                                    style="color: #f7f7f7;   font-size: auto"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-3 col-md-3 col-lg-4 d-flex estilo-rodape-ultimo" style="align-items: center;">           
+                    <div class="p-2"><img style="width: 100%" src="img/visa-img.webp" alt=""></div>
+                    <div class="p-2"><img style="width: 100%" src="img/img-rodapé.webp" alt=""></div>
+                    <div class="p-2"><img style="width: 100%" src="img/mastercard.webp" alt=""></div>       
+                </div>
+            </div>
+            <div class="row d-flex" style="width: 100%;justify-content: center; padding-bottom: 1rem;">
+                <div style="text-align: center; font-weight: 600; font-size: large;"> ___________________  Desenvolvido por Gabriel B. Lopes   ___________________ </div>          
+            </div>
+    </footer>
+    <div class="container">
+        <div class="modal" id="caixa-busca">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body" style="display: flex;">
+                        <input type="search" style="width: 100%;" class="form-control"
+                            placeholder="Busque aqui o que você deseja">
+                        <button class="btn btn-danger" data-bs-dismiss="modal">X</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
